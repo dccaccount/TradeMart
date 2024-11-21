@@ -26,5 +26,15 @@ namespace TradeMart.Controllers
 
             return View();
         }
+
+        public ActionResult AgentLogin()
+        {
+            return View();
+        }
+
+        public ActionResult AgentRegister()
+        {
+            return View();
+        }
     }
 }
