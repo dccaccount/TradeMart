@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.json
+/.vs/TMart/v17/.wsuo
+/.vs/TradeMart/config/applicationhost.config
+/.vs/TradeMart/FileContentIndex/0b61f460-737a-422b-85ab-337da6b77d69.vsidx
+/TradeMart/bin
+/TradeMart/obj/Debug/build.force
+/TradeMart/obj/Debug/TradeMart.csproj.AssemblyReference.cache
+/TradeMart/obj/Debug/TradeMart.csproj.CoreCompileInputs.cache
+/TradeMart/obj/Debug/TradeMart.csproj.FileListAbsolute.txt
+/TradeMart/obj/Debug/TradeMart.csproj.Up2Date
+/TradeMart/obj/Debug/TradeMart.dll
+/TradeMart/obj/Debug/TradeMart.pdb
+/.vs/TradeMart/v17/.suo
