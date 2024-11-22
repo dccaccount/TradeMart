@@ -4,14 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    <link href="~/CSS/jquery-ui.css" rel="stylesheet" />
-    <script src="~/PScripts/jquery-3.7.1.js"></script>
-    <script src="~/PScripts/jquery-ui.js"></script>
-    @*<script>
+    <link href="~/AgentContent/jquery-ui.css" rel="stylesheet" />
+    <script src="~/AgentScripts/jquery-3.7.1.js"></script>
+    <script src="~/AgentScripts/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
         $(function () {
             $("#datepicker").datepicker();
         });
-    </script>*@
+    </script>
     <style>
         ul {
             list-style-type: none;
@@ -37,24 +38,37 @@
                     background-color: #111;
                 }
     </style>
+    <style>
+        body {
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+    </style>
 </head>
 <body>
-    <div style="width: 100%; float: left !important;">
-        <div class="container">
-            <ul class="navbar-nav flex-grow-1">
-                <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                <li>@Html.ActionLink("AgentLogin", "AgentLogin", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                <li>@Html.ActionLink("AgentRegister", "AgentRegister", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-            </ul>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button">@Html.ActionLink("Trade Mart", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</a>
+                <a href="#contact" class="w3-bar-item w3-button">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</a>
+                <a href="#contact" class="w3-bar-item w3-button">@Html.ActionLink("AgentLogin", "AgentLogin", "Home", new { area = "" }, new { @class = "nav-link" })</a>
+                <a href="#contact" class="w3-bar-item w3-button">@Html.ActionLink("AgentRegister", "AgentRegister", "Home", new { area = "" }, new { @class = "nav-link" })</a> 
+            </div>
         </div>
     </div>
+    <br />
+    <br />
 
-    <div style="width:100%; float:right !important;">
+   
 
         @RenderBody()
 
-    </div>
+   
 </body>
 </html>

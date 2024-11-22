@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/CSS/jquery-ui.css" rel="stylesheet" />
+    <script src="~/PScripts/jquery-3.7.1.js"></script>
+    <script src="~/PScripts/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    @*<script>
+            $(function () {
+                $("#datepicker").datepicker();
+            });
+        </script>*@
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+    </style>
+</head>
+<body>
+    <div style="width: 100%; float: left !important;">
+        <div class="container">
+            <ul class="navbar-nav flex-grow-1">
+                <li>@Html.ActionLink("DashBoard", "DashBoard", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                <li>@Html.ActionLink("LogOff", "LogOff", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="width:100%; float:right !important;">
+
+        @RenderBody()
+
+    </div>
+</body>
+</html>
